@@ -13,11 +13,7 @@ import androidx.room.Relation
 import androidx.room.RoomDatabase
 import androidx.room.Transaction
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-}
+class MainActivity : ComponentActivity()
 
 
 @Database(
@@ -51,7 +47,6 @@ data class FooWithBar(
 @Entity
 data class Bar(
     @PrimaryKey val id: Int,
-    val fooId: Int,
 )
 
 @Entity
